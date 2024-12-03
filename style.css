@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    justify-content: center;
+    background-color: #680263;
+    width: 20%;
+    padding: 10px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.menu img {
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: bold;
+
+}
+
+.menu ul li a:hover {
+    color: #dfedd3;
+}
+
+.active {
+    color: white;
+}
+
+.main-content {
+    padding-top: 150px;
+    padding-left: 25.5%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    padding-top: 150px;
+    padding-left: 25.5%;
+    display: flex;
+    padding-right: 20px;
+    flex-direction: column;
+}
+
+.menu ul li a:hover {
+    color: #af4aaa;
+}
+
+.active {
+    background-color: #859c9752;
+    color: #af346e;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social li a i {
+    font-size: 20px;
+    background-color: #495057;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+}
+
+.social li a i:hover {
+    color: #680263;
+}
+
+#awards i {
+    color: #cb6ece !important;
+}
+
+#awards li {
+    list-style: none;
+
+    color: #6c757d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#awards i {
+    margin-right: 10px;
+}
+
+#education {
+    margin-top: 50px;
+
+}
+
+#education h2 {
+    font-size: calc(1.475rem + 4vw);
+    margin-bottom: 3rem !important;
+    color: #343a40;
+}
+
+.education-entry {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edu-details {
+    flex: 1;
+}
+
+.edu-details h3 {
+    text-transform: uppercase;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.edu-details p {
+    color: #6c757d;
+    margin-top: 20px;
+
+}
+
+.edu-dates p {
+    white-space: nowrap;
+    font-size: 16px;
+    text-align: right;
+    color: rgb(228, 10, 10);
+
+}
+
+#experience {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.job-entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.job-details {
+    max-width: 75%;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.company {
+    font-style: italic;
+    color: #666;
+}
+
+.job-dates p {
+    color: #b05e5e;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: right;
+}
+
+p {
+    font-size: 1em;
+    color: #444;
+    line-height: 1.5;
+}
+
+.job-dates {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 25%;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.icons i {
+    font-size: 3rem;
+    color: #6c757d;
+    margin-right: 20px;
+}
+
+.list2 {
+    margin-top: 20px;
+    color: #6c757d;
+    list-style: none;
+
+}
+
+.list2 li {
+    margin-top: 15px;
+}
+
+#skills h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+#about,
+#experience,
+#education,
+#interests,
+#skills,
+#awards {
+    margin-top: 50px;
+}
+
+#about h1,
+#experience h2,
+#education h2,
+#interests h2,
+#skills h2,
+#awards h2 {
+    font-size: calc(1.475rem + 4vw);
+    margin-bottom: 3rem;
+    color: #343a40;
+}
+
+#about h1 span,
+.container h1 span {
+    color: #680263;
+
+}
+
+.location,
+.ide {
+    color: #6c757d;
+    margin-top: 8px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.icons i {
+    font-size: 30px;
+    color: #6c757d;
+    margin-right: 20px;
+}
+#contact {
+    margin-top: 50px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #6c757d;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #680263;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #680263;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #af4aaa;
+}
+
+
+
+
+@media (max-width: 468px) {
+
+    
+    .menu-icon {
+        top: 20px;
+        left: 20px;
+        color: rgb(46, 41, 41); /* لون الأيقونة */
+        border-radius: 8px;
+        padding: 12px; /* زيادة المسافة بين الخطوط */
+        z-index: 100;
+    }
+    .menu {
+        width: 100%;
+        padding: 10px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu img {
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+    }
+
+    .menu ul li a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .menu-icon {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-icon span {
+        width: 100%;
+        height: 2px;
+    }
+
+    body,
+    p,
+    .menu ul li a {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .social li a i {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .main-content,
+    .container {
+        padding: 10px;
+        margin-top: 80px;
+    }
+
+    #education h2,
+    #experience h2,
+    #interests h2,
+    #skills h2,
+    #awards h2 {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .edu-details p,
+    .job-details p,
+    .edu-dates p,
+    .job-dates p {
+        font-size: 0.9em;
+        color: #444;
+    }
+}
